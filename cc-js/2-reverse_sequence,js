@@ -1,0 +1,20 @@
+// WPU Coding Challenge 2024
+// https://www.codewars.com/kata/5a00e05cc374cb34d100000d
+// 2/366
+
+// const reverseSeq = n => {
+//     const arr = [];
+//     for(let i = n;i >= 1;i--){
+//         arr.push(i);
+//     }
+//     return arr;
+// };
+
+const reverseSeq = n => [...Array(n)].map((el,i) => n - i);
+
+    // return [...Array(n)
+    // .fill()
+    // .map((el,i) => i + 1)
+    // .reverse()];
+
+console.log(reverseSeq(5));
